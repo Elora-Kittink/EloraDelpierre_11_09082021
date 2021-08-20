@@ -7,8 +7,8 @@ import About from '../pages/about';
 import Home from '../pages/home';
 import Housing from '../pages/housing';
 import E404 from '../pages/e404';
-import Footer from './footer';
-import Header from './header';
+import Footer from './Footer';
+import Header from './Header';
 
 
 
@@ -18,8 +18,9 @@ class App extends React.Component {
   return (
   <Fragment>
     <div className="wrapper">
-					<Header />
+					
 					<Router>
+          <Header />
             <Switch>
 						<Route exact path="/" component={Home}>
 							<Home />

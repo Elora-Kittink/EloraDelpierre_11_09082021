@@ -13,11 +13,12 @@ class Dropdown extends React.Component {
     }
 
     render(){
+        const { title, content } = this.props
         const className = this.state.showContent ? 'show' : 'hide';
         return <div className="dropdown">
-            <button className="dropdown_btn" onClick={this.handleClick}></button>
+            <button className="dropdown_btn" onClick={this.handleClick}>{title}</button>
             <div className={className}>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ratione, aut maxime accusantium, ipsum optio suscipit laboriosam consectetur, blanditiis id libero! Unde incidunt laborum similique reiciendis vitae earum illum dicta!</p>
+                <p>{content}Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ratione, aut maxime accusantium, ipsum optio suscipit laboriosam consectetur, blanditiis id libero! Unde incidunt laborum similique reiciendis vitae earum illum dicta!</p>
             </div>
         </div>
     }

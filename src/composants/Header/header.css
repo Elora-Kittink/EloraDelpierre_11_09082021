@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    
+}
+
+.header_nav-accueil {
+    color: #FF6060;
+}
+
+.header_nav-about {
+    color: #FF6060;
+    text-decoration: none;
+}
+

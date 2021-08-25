@@ -3,12 +3,12 @@ import './App.css';
 import {Switch, Route } from 'react-router-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 import React, { Fragment } from 'react';
-import About from '../pages/about';
-import Home from '../pages/home';
-import Housing from '../pages/housing';
-import E404 from '../pages/e404';
-import Footer from './Footer';
-import Header from './Header';
+import About from '../../pages/about/about';
+import Home from '../../pages/home/home';
+import Housing from '../../pages/housing/housing';
+import E404 from '../../pages/error404/error404';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 
 
@@ -39,7 +39,7 @@ class App extends React.Component {
           
 				</div>
 				<Footer />
-  </Fragment>
+     </Fragment>
   );
 }
 }

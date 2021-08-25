@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
 import { Redirect, withRouter } from 'react-router-dom'
 
-class About extends React.Component {
+class Housing extends React.Component {
     render(){
-        return <p>ABOUT</p>
+        return <div>
+            
+        </div>
     }
 }
 
-export default About;
+export default Housing;

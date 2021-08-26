@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { housings } from "../../housing-list";
 import "./tags.css";
 
 class Tags extends Component {
@@ -7,7 +6,11 @@ class Tags extends Component {
     return (
       <div>
         {this.props.tags.map((tag) => {
-          return <div className="tag">{tag}</div>;
+          return (
+            <div key={tag.index} className="tag">
+              {tag}
+            </div>
+          );
         })}
       </div>
     );

@@ -3,6 +3,7 @@ import { housings } from "../../housing-list";
 import Tags from "../../composants/tags/Tags";
 import Host from "../../composants/host/Host";
 import "./housing.css";
+import Rating from "../../composants/Rating/Rating";
 
 class Housing extends Component {
   // state = {
@@ -27,6 +28,7 @@ class Housing extends Component {
             <Tags tags={housings[index].tags} />
           </div>
           <Host host={housings[index].host} />
+          <Rating rate={housings[index].rating} />
         </div>
       </div>
     );

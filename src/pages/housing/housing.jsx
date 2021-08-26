@@ -4,6 +4,7 @@ import Tags from "../../composants/tags/Tags";
 import Host from "../../composants/host/Host";
 import "./housing.css";
 import Rating from "../../composants/Rating/Rating";
+import Dropdown from "../../composants/Dropdown/Dropdown";
 
 class Housing extends Component {
   // state = {
@@ -29,6 +30,10 @@ class Housing extends Component {
           </div>
           <Host host={housings[index].host} />
           <Rating rate={housings[index].rating} />
+        </div>
+        <div>
+          <Dropdown title="Description" content={housings[index].description} />
+          <Dropdown title="Equipements" content={housings[index].equipments} />
         </div>
       </div>
     );

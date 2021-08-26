@@ -18,7 +18,10 @@ class Dropdown extends React.Component {
         return <div className="dropdown">
             <button className="dropdown_btn" onClick={this.handleClick}>{title}</button>
             <div className={className}>
-                <p>{content}Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ratione, aut maxime accusantium, ipsum optio suscipit laboriosam consectetur, blanditiis id libero! Unde incidunt laborum similique reiciendis vitae earum illum dicta!</p>
+                {Array.isArray(content) ? (
+                    <ul>{content.map((element) => (<li>{element}</li>))}</ul>
+                ) : (<p>{content}</p>)}
+                
             </div>
         </div>
     }

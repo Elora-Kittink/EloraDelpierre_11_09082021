@@ -18,8 +18,7 @@ class About extends React.Component {
             <Dropdown title={"Fiabilité"} content={this.fiability}/>
             <Dropdown title={"Respect"} content={this.respect}/>
             <Dropdown title={"Service"} content={this.service}/>
-            <Dropdown title={"Sécurité"} content={this.security}/>
-            
+            <Dropdown title={"Sécurité"} content={this.security}/>            
         </div>
     }
 }

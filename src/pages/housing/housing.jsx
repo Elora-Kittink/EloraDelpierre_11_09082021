@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { housings } from "../../housing-list";
 import Tags from "../../composants/tags/Tags";
 import Host from "../../composants/host/Host";
-import "./housing.css";
+import Carousel from "../../composants/carousel/Carousel";
 import Rating from "../../composants/Rating/Rating";
 import Dropdown from "../../composants/Dropdown/Dropdown";
+import "./housing.css";
 
 class Housing extends Component {
   // state = {
@@ -20,7 +21,7 @@ class Housing extends Component {
     console.log(housings[index].tags);
     return (
       <div>
-        {/* <Carousel/> */}
+        <Carousel pictures={housings[index].pictures} />
 
         <div>
           <div>

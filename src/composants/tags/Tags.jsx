@@ -4,7 +4,7 @@ import "./tags.css";
 class Tags extends Component {
   render() {
     return (
-      <div>
+      <div className="tags">
         {this.props.tags.map((tag) => {
           return (
             <div key={tag.index} className="tag">

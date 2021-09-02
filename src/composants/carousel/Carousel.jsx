@@ -41,12 +41,16 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div>
-        <button>
+      <div className="carousel">
+        <button className="left_btn">
           <i className="fas fa-chevron-left" onClick={this.handleClickLeft} aria-label="previous image"></i>
         </button>
-        <img src={this.state.picturesArray[this.state.currentIndex]} alt="photos du logement"></img>
-        <button>
+        <img
+          className="carousel_img"
+          src={this.state.picturesArray[this.state.currentIndex]}
+          alt="photos du logement"
+        ></img>
+        <button className="right_btn">
           <i className="fas fa-chevron-right" onClick={this.handleClickRight} aria-label="next image"></i>
         </button>
       </div>

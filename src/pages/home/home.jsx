@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Banner image={home} title={"chez vous, partout et ailleurs"} />
+        <Banner className="home_banner" image={home} title={"chez vous, partout et ailleurs"} />
         <div className="thumbnails">
           {housings.map((housing) => (
             <Thumbnail details={housing} />

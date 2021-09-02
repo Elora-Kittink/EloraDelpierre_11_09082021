@@ -1,17 +1,32 @@
-.number{
-    color: #FF6060;
-    font-size: 200px;
-    font-weight: 700;
-    text-align: center;
+.error-div {
+  display: flex;
+  flex-direction: column;
 }
 
-.oups{
-    color: #FF6060;
-    font-weight: 500;
-    text-align: center;
+.number {
+  color: #ff6060;
+  font-size: 200px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.link{
-    color: #FF6060;
-    text-align: center;
+.oups {
+  color: #ff6060;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.link {
+  color: #ff6060;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .number {
+    font-size: 100px;
+  }
 }

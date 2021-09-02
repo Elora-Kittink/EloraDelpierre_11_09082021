@@ -23,16 +23,18 @@ class Housing extends Component {
       <div>
         <Carousel pictures={housings[index].pictures} />
 
-        <div>
-          <div>
-            {housings[index].title}
-            {housings[index].location}
+        <div className="housing_info">
+          <div className="title-location-tags">
+            <p className="housing_title">{housings[index].title}</p>
+            <p className="housing_location">{housings[index].location}</p>
             <Tags tags={housings[index].tags} />
           </div>
-          <Host host={housings[index].host} />
-          <Rating rate={housings[index].rating} />
+          <div className="host-rating">
+            <Host host={housings[index].host} />
+            <Rating rate={housings[index].rating} />
+          </div>
         </div>
-        <div>
+        <div className="housing_dropdown">
           <Dropdown title="Description" content={housings[index].description} />
           <Dropdown title="Equipements" content={housings[index].equipments} />
         </div>

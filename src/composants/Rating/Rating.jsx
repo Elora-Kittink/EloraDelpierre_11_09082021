@@ -77,7 +77,7 @@ class Rating extends Component {
   render() {
     console.log(this.props.rate);
     return (
-      <div>
+      <div className="rating_box">
         {(() => {
           switch (this.props.rate) {
             case "0":

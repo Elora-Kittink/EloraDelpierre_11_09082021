@@ -18,7 +18,6 @@ class Housing extends Component {
     const index = housings.findIndex((housing) => {
       return housing.id === id;
     });
-    console.log(housings[index].tags);
     return (
       <div>
         <Carousel pictures={housings[index].pictures} />

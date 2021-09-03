@@ -24,8 +24,8 @@ class Dropdown extends Component {
         <div className={"dropdown_content " + className}>
           {Array.isArray(content) ? (
             <ul>
-              {content.map((element) => (
-                <li>{element}</li>
+              {content.map((element, index) => (
+                <li key={index}>{element}</li>
               ))}
             </ul>
           ) : (

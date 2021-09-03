@@ -10,32 +10,18 @@ class Carousel extends Component {
 
   handleClickRight = () => {
     /* si on est sur le dernier element du tableau alors on revient au premier */
-    console.log("Index avant clic : " + this.state.currentIndex);
-    console.log("longueur de tableau : ");
-    console.log(this.state.picturesArray);
     if (this.state.currentIndex === this.state.picturesArray.length - 1) {
       this.setState({ currentIndex: 0 });
-      console.log(this.state.picturesArray[this.state.currentIndex]);
-      console.log(this.state.currentIndex);
     } else {
       this.setState({ currentIndex: this.state.currentIndex + 1 });
-      console.log(this.state.picturesArray[this.state.currentIndex]);
-      console.log(this.state.currentIndex);
     }
   };
 
   handleClickLeft = () => {
-    console.log("Index avant clic : " + this.state.currentIndex);
-    console.log("longueur de tableau : ");
-    console.log(this.state.picturesArray.length);
     if (this.state.currentIndex === 0) {
       this.setState({ currentIndex: this.state.picturesArray.length - 1 });
-      console.log(this.state.picturesArray[this.state.currentIndex]);
-      console.log(this.state.currentIndex);
     } else {
       this.setState({ currentIndex: this.state.currentIndex - 1 });
-      console.log(this.state.picturesArray[this.state.currentIndex]);
-      console.log(this.state.currentIndex);
     }
   };
 

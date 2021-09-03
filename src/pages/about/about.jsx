@@ -19,10 +19,10 @@ class About extends Component {
       <div>
         <Banner className="about_banner" image={about} />
         <div className="dropdown_box">
-          <Dropdown title={"Fiabilité"} content={this.fiability} />
-          <Dropdown title={"Respect"} content={this.respect} />
-          <Dropdown title={"Service"} content={this.service} />
-          <Dropdown title={"Sécurité"} content={this.security} />
+          <Dropdown title="Fiabilité" content={this.fiability} />
+          <Dropdown title="Respect" content={this.respect} />
+          <Dropdown title="Service" content={this.service} />
+          <Dropdown title="Sécurité" content={this.security} />
         </div>
       </div>
     );

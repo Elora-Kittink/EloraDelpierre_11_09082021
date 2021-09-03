@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./error404.css";
 
 class E404 extends Component {
@@ -7,9 +8,9 @@ class E404 extends Component {
       <div className="error-div">
         <p className="number">404</p>
         <p className="oups">Oups! La page que vous demandez n'éxiste pas.</p>
-        <a className="link" href="*">
+        <Link className="link" to="/">
           Retourner sur la page d'accueil
-        </a>
+        </Link>
       </div>
     );
   }

@@ -36,6 +36,9 @@ class Carousel extends Component {
           src={this.state.picturesArray[this.state.currentIndex]}
           alt="photos du logement"
         ></img>
+        <p className="image_number">
+          {this.state.currentIndex}/{this.props.pictures.length}
+        </p>
         <button className="right_btn">
           <i className="fas fa-chevron-right" onClick={this.handleClickRight} aria-label="next image"></i>
         </button>

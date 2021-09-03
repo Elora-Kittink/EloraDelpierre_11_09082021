@@ -8,10 +8,6 @@ import Dropdown from "../../composants/Dropdown/Dropdown";
 import "./housing.css";
 
 class Housing extends Component {
-  // state = {
-  //     housing: {housings.map((housing) => () }
-  // }
-
   render() {
     const urlSplited = window.location.pathname.split("/");
     const id = urlSplited[2];
@@ -24,8 +20,12 @@ class Housing extends Component {
 
         <div className="housing_info">
           <div className="title-location-tags">
-            <p className="housing_title">{housings[index].title}</p>
-            <p className="housing_location">{housings[index].location}</p>
+            <p className="housing_title" aria-label="titre du logement">
+              {housings[index].title}
+            </p>
+            <p className="housing_location" aria-label="localisation du logement">
+              {housings[index].location}
+            </p>
             <Tags tags={housings[index].tags} />
           </div>
           <div className="host-rating">
@@ -34,8 +34,8 @@ class Housing extends Component {
           </div>
         </div>
         <div className="housing_dropdown">
-          <Dropdown title="Description" content={housings[index].description} />
-          <Dropdown title="Equipements" content={housings[index].equipments} />
+          <Dropdown aria="description du logement" title="Description" content={housings[index].description} />
+          <Dropdown aria="équipements du logement" title="Equipements" content={housings[index].equipments} />
         </div>
       </div>
     );

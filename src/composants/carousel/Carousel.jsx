@@ -27,9 +27,9 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="carousel">
-        <button className="left_btn">
-          <i className="fas fa-chevron-left" onClick={this.handleClickLeft} aria-label="previous image"></i>
+      <div className="carousel" aria-label="photos du logement">
+        <button className="left_btn" aria-label="photo précédente">
+          <i className="fas fa-chevron-left" onClick={this.handleClickLeft}></i>
         </button>
         <img
           className="carousel_img"
@@ -37,10 +37,10 @@ class Carousel extends Component {
           alt="photos du logement"
         ></img>
         <p className="image_number">
-          {this.state.currentIndex}/{this.props.pictures.length}
+          {this.state.currentIndex + 1}/{this.props.pictures.length}
         </p>
-        <button className="right_btn">
-          <i className="fas fa-chevron-right" onClick={this.handleClickRight} aria-label="next image"></i>
+        <button className="right_btn" aria-label="photo suivante">
+          <i className="fas fa-chevron-right" onClick={this.handleClickRight}></i>
         </button>
       </div>
     );

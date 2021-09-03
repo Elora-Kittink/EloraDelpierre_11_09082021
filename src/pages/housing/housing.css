@@ -17,18 +17,11 @@
   margin: 10px 10px 20px 10px;
 }
 
-.tag {
-  background-color: #ff6060;
-  color: white;
-  border-radius: 10px;
-  margin: 4px;
-  padding: 2px 20px;
-}
-
 .housing_dropdown {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .housing_dropdown button {

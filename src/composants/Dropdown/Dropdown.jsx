@@ -15,8 +15,13 @@ class Dropdown extends Component {
     const className = this.state.showContent ? "show" : "hide";
     const antiClassName = this.state.showContent ? "hide" : "show";
     return (
-      <div className="dropdown">
-        <button className="dropdown_btn" onClick={this.handleClick}>
+      <div className="dropdown" aria-label={this.props.aria}>
+        <button
+          className="dropdown_btn"
+          onClick={this.handleClick}
+          aria-haspopup="true"
+          aria-expanded={this.state.showContent}
+        >
           {title}
           <i className={"fas fa-chevron-down " + antiClassName}></i>
           <i className={"fas fa-chevron-up " + className}></i>

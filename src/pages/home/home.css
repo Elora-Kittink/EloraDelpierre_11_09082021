@@ -1,6 +1,6 @@
 .thumbnails {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: #f6f6f6;
   border-radius: 25px;

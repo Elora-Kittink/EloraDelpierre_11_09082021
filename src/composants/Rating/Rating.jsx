@@ -4,12 +4,12 @@ import "./rating.css";
 class Rating extends Component {
   render() {
     return (
-      <div className="rating_box">
+      <div className="rating_box" aria-label="note du logement">
         {(() => {
           switch (this.props.rate) {
             case "0":
               return (
-                <div>
+                <div aria-label="0 étoile sur 5">
                   {" "}
                   <i className="fas fa-star blank"></i>
                   <i className="fas fa-star blank"></i>
@@ -21,7 +21,7 @@ class Rating extends Component {
 
             case "1":
               return (
-                <div>
+                <div aria-label="1 étoile sur 5">
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star blank"></i>
                   <i className="fas fa-star blank"></i>
@@ -32,7 +32,7 @@ class Rating extends Component {
 
             case "2":
               return (
-                <div>
+                <div aria-label="2 étoile sur 5">
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star blank"></i>
@@ -43,7 +43,7 @@ class Rating extends Component {
 
             case "3":
               return (
-                <div>
+                <div aria-label="3 étoile sur 5">
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star full"></i>
@@ -54,7 +54,7 @@ class Rating extends Component {
 
             case "4":
               return (
-                <div>
+                <div aria-label="4 étoile sur 5">
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star full"></i>
@@ -65,7 +65,7 @@ class Rating extends Component {
 
             case "5":
               return (
-                <div>
+                <div aria-label="5 étoile sur 5">
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star full"></i>
                   <i className="fas fa-star full"></i>
@@ -76,7 +76,7 @@ class Rating extends Component {
 
             default:
               return (
-                <div>
+                <div aria-label="pas de note disponible">
                   <i className="fas fa-star blank"></i>
                 </div>
               );

@@ -18,16 +18,16 @@ class App extends React.Component {
             <Header />
             <Switch>
               <Route exact path="/" component={Home}>
-                <Home />
+                {/* <Home /> */}
               </Route>
               <Route path="/about" component={About}>
-                <About />
+                {/* <About /> */}
               </Route>
               <Route path="/housing/:id" component={Housing}>
-                <Housing />
+                {/* <Housing /> */}
               </Route>
               <Route path="*" component={E404}>
-                <E404 />
+                {/* <E404 /> */}
               </Route>
             </Switch>
           </Router>

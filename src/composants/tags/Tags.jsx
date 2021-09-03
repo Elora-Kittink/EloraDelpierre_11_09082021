@@ -5,9 +5,9 @@ class Tags extends Component {
   render() {
     return (
       <div className="tags">
-        {this.props.tags.map((tag) => {
+        {this.props.tags.map((tag, index) => {
           return (
-            <div key={tag.index} className="tag">
+            <div key={index} className="tag">
               {tag}
             </div>
           );

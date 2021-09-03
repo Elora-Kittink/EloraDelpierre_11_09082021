@@ -12,8 +12,8 @@ class Home extends Component {
       <div>
         <Banner className="home_banner" image={home} title={"chez vous, partout et ailleurs"} />
         <div className="thumbnails">
-          {housings.map((housing) => (
-            <Thumbnail details={housing} />
+          {housings.map((housing, index) => (
+            <Thumbnail details={housing} key={index} />
           ))}
         </div>
       </div>

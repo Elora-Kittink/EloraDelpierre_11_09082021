@@ -17,18 +17,10 @@ class App extends React.Component {
           <Router>
             <Header />
             <Switch>
-              <Route exact path="/" component={Home}>
-                {/* <Home /> */}
-              </Route>
-              <Route path="/about" component={About}>
-                {/* <About /> */}
-              </Route>
-              <Route path="/housing/:id" component={Housing}>
-                {/* <Housing /> */}
-              </Route>
-              <Route path="*" component={E404}>
-                {/* <E404 /> */}
-              </Route>
+              <Route exact path="/" component={Home}></Route>
+              <Route path="/about" component={About}></Route>
+              <Route path="/housing/:id" component={Housing}></Route>
+              <Route path="*" component={E404}></Route>
             </Switch>
           </Router>
         </div>

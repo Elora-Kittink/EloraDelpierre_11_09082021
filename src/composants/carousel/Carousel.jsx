@@ -9,7 +9,6 @@ class Carousel extends Component {
   };
 
   handleClickRight = () => {
-    /* si on est sur le dernier element du tableau alors on revient au premier */
     if (this.state.currentIndex === this.state.picturesArray.length - 1) {
       this.setState({ currentIndex: 0 });
     } else {
